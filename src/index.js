@@ -9,7 +9,6 @@
 /*eslint-disable prefer-const*/
 /*eslint-disable space-unary-ops*/
 /*eslint-disable semi-spacing*/
-/*eslint-disable no-undef*/
 /*eslint-disable no-unused-vars*/
 
 const X2JS = function (config) {
@@ -202,11 +201,12 @@ const X2JS = function (config) {
         result.__cnt = 0;
 
         let nodeChildren = node.childNodes;
+        let childName = '';
 
         // Children nodes
         for (let cidx = 0; cidx < nodeChildren.length; cidx++) {
           let child = nodeChildren.item(cidx); // nodeChildren[cidx];
-          let childName = getNodeLocalName(child);
+          childName = getNodeLocalName(child);
 
           if (child.nodeType != DOMNodeTypes.COMMENT_NODE) {
             let childPath = path + "." + childName;
@@ -510,7 +510,7 @@ const X2JS = function (config) {
       if (xmlDocStr.indexOf("<?") == 0) {
         xmlDocStr = xmlDocStr.substr(xmlDocStr.indexOf("?>") + 2);
       }
-      xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+      xmlDoc = new ActiveXObject("Microsoft.XMLDOM"); // eslint-disable-line no-undef
       xmlDoc.async = "false";
       xmlDoc.loadXML(xmlDocStr);
     }
