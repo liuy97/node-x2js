@@ -4,7 +4,7 @@ import uglify from 'rollup-plugin-uglify';
 import bundleSize from 'rollup-plugin-bundle-size';
 import commonjs from 'rollup-plugin-commonjs';
 
-const name = `nodeX2js`;
+const name = `X2JS`;
 
 const plugins = [
   babel(),

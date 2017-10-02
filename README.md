@@ -6,12 +6,12 @@
 [![David](https://img.shields.io/david/liuy97/node-x2js.svg?style=flat-square)](https://david-dm.org/liuy97/node-x2js)
 [![Coverage Status](https://img.shields.io/coveralls/liuy97/node-x2js.svg?style=flat-square)](https://coveralls.io/github/liuy97/node-x2js)
 
-> ode
+> x2js - XML to JSON and vice versa for JavaScript
 
 ### Usage
 
 ```js
-import nodeX2js from 'node-x2js';
+import X2JS from 'node-x2js';
 
 ```
 
@@ -31,7 +31,7 @@ or npm
 You can pass in extra options as a configuration object (➕ required, ➖ optional, ✏️ default).
 
 ```js
-import nodeX2js from 'node-x2js';
+import X2JS from 'node-x2js';
 
 ```
 
