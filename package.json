@@ -1,6 +1,6 @@
 {
   "name": "node-x2js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "x2js - XML to JSON and vice versa for JavaScript",
   "main": "cjs/index.js",
   "browser": "dist/X2JS.js",
